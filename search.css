@@ -1,0 +1,61 @@
+.menubar
+        {
+            background-color: #7FAFB3; 
+            height: 410px;
+        }
+        .list-group
+        {
+            padding-top: 30px;
+        }
+        .rs
+        {
+            padding-top: 5px;
+        }
+        .vs
+        {
+            padding-bottom:5px;
+        }
+        a 
+        {
+            color:black;
+            text-decoration: none;
+        }
+        a:hover
+        {
+            cursor:pointer; 
+        }
+        .I
+        {
+            margin-top: 20px;
+            background-color: white;
+            display: inline-block;
+        }
+
+        .mainClass{
+            
+            padding: 10px;
+            min-height: 700px;
+        }
+
+        .customTable{
+            border: 1px;
+            border-color: black;
+        }
+        .blog-footer
+        {
+            background: #73B4BF;
+        }
+        .header
+        {
+            background-color:#73B4BF;
+            height:60px;
+        }
+        .container-fluid
+        {
+            background-color: #50A1AF;
+            
+        }
+        body
+        {
+            background-color: #73B4BF;
+        }

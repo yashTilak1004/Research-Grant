@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login page</title>
+    <style>
+        
+        .rs
+        {
+            padding-top: 5px;
+        }
+        .vs
+        {
+            padding-bottom:5px;
+        }
+        .header
+        {
+            background-color:#73B4BF;
+            height:60px;
+        }
+        .container-fluid
+        {
+            background-color: #50A1AF;
+            
+        }
+        .blog-footer
+        {
+            background: #73B4BF;
+        }
+        
+        
+    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <div class="header text-white">
+        <h1 >Research Grant Portal</h1>
+    </div>
+    <div class="container-fluid text-white">
+        
+        
+
+        <!--navbar-->
+        <div class="nav-pills nav-fill nav-tab py-1 mb-2">
+            <nav class="nav d-flex justify-content-between">
+              <li class="btn btn-outline-light my-2 my-sm-0 nav-item text-white"><a class="p-3 nav-link text-muted" href="user.html">User Page</a></li>
+              <li class="btn btn-outline-light my-2 my-sm-0 nav-item text-white"><a class="p-3 nav-link text-muted" href="search.html">Research List</a></li>
+              <li class="btn btn-outline-light my-2 my-sm-0 nav-item text-white"><a class="p-3 nav-link text-muted" href="stats.html">Statistics</a></li>
+              <li class="btn btn-outline-light my-2 my-sm-0 nav-item text-white"><a class="p-3 nav-link text-muted" href="about.html">About</a></li>
+              <li class="btn btn-outline-light my-2 my-sm-0 nav-item text-white"><a class="p-3 nav-link text-muted" href="index.html">Sign In</a></li>
+            </nav>
+        </div>
+
+
+        <div class="row justif-content-center">
+            <div class="col-md-4">
+                <div class="card shadow-lg mt-5">
+                    <div class="card-header" style="background-color:#73B4BF">Login Here</div>
+                    <div class="card-body" style="background-color:#356A73">
+                    <form>
+                        <div class="form mb-3">
+                            <input type="text" class="form-control" id="username" >
+                            <label for="username">User Name</label>
+                        </div>
+                        <div class="form mb-3">
+                            <input type="password" class="form-control" id="Password" >
+                            <label for="Password">Password</label>
+                        </div>
+                        <div class="d-grid  vs mb-2">
+                            <a href="admin.html" class="btn btn-info" role="button">Administration</a>
+                        </div>
+                        <div class="d-grid rs ">
+                            <a href="user.html" class="btn btn-info" role="button">Researcher</a>
+                        </div>
+                    </form>
+                </div>
+                </div>
+            </div>
+            <div class="col-md-8" style="margin-bottom:10px">
+                <div class="card shadow-lg mt-5">
+                    <div class="card-header " style="background-color:#73B4BF">Register Here</div>
+                    <div class="card-body" style="background-color:#356A73">
+                        <form>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Email address</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                            </div>
+                            <div class="form-row">
+                                <div class="col">
+                                    <label for="text1">First Name</label>
+                                    <input type="text" class="form-control" id="text1"  placeholder="First Name">
+                                </div>
+                                <div class="col">
+                                    <label for="text2">Second Name</label>
+                                    <input type="text" class="form-control" id="text2"  placeholder="Second Name">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="Username">Username</label>
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                      <span class="input-group-text" id="inputGroupPrepend">@</span>
+                                    </div>
+                                <input type="text" class="form-control" id="validationCustomUsername" placeholder="Username" aria-describedby="inputGroupPrepend" required>
+                            </div>
+                            <div class="form-row">
+                                <div class="col">
+                                  <label for="validationCustom03">City</label>
+                                  <input type="text" class="form-control" id="validationCustom03" placeholder="City" required>
+                                  <div class="invalid-feedback">
+                                    Please provide a valid city.
+                                  </div>
+                                </div>
+                            <div class="col">
+                                <label for="validationCustom04">State</label>
+                                <input type="text" class="form-control" id="validationCustom04" placeholder="State" required>
+                            </div>
+                            <div class="col-md-3 mb-3">
+                                <label for="validationCustom05">Zip</label>
+                                <input type="text" class="form-control" id="validationCustom05" placeholder="Zip" required>
+                            </div>
+
+
+
+
+                            <div class="form-group">
+                                <label for="Password">Password</label>
+                                <input type="password" class="form-control" id="Password" placeholder="Password">
+                            </div>
+                            <div class="form-group">
+                                <label for="Password">Rewrite Password</label>
+                                <input type="password" class="form-control" id="Password" placeholder="Password">
+                            </div>
+                            <div class="form-group">
+                                <div class="form-check">
+                                  <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+                                  <label class="form-check-label" for="invalidCheck2">
+                                    Agree to terms and conditions
+                                  </label>
+                                </div>
+                            </div>
+                            <button class="btn btn-primary" type="submit" style="background-color: #1bb8cc">Submit form</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <footer class="blog-footer">
+            <center>
+                <p>A project made as a fulfilment of project at KMIT</p>
+                      <p>Email:yashwanthtilak@gmail.com</p>
+                      <p>Phone Number:9182287234</p>
+            </center>
+        </footer>
+</body>
+</html>
